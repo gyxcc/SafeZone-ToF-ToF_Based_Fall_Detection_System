@@ -1,0 +1,23 @@
+# Dataset configuration for fall detection pose estimation.
+
+# Absolute path to the dataset root directory
+path: c:\\Users\\LTTC\\Desktop\\fyp\\fall_dataset
+
+# Train/val image directories
+train: train/images
+val: valid/images
+
+# Keypoint shape: [number of keypoints, number of dims (x, y, visibility)]
+kpt_shape: [5, 3]
+
+# Class names
+names:
+  0: UpperBody
+
+# Keypoint flip map for data augmentation.
+# This tells YOLO how to flip keypoints during horizontal flips.
+# Order: nose, right_shoulder, left_shoulder, right_hip, left_hip
+# Indices: 0,   1,              2,              3,         4
+# Flip pairs: (right_shoulder, left_shoulder), (right_hip, left_hip)
+# So, index 1 flips with 2, and index 3 flips with 4.
+flip_idx: [0, 2, 1, 4, 3]

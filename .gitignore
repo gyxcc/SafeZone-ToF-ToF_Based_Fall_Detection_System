@@ -1,0 +1,48 @@
+# ========================
+# Model Weights
+# ========================
+*.pt
+*.joblib
+*.pkl
+*.pth
+*.h5
+*.keras
+*.onnx
+models/*.pt
+models/*.joblib
+
+# ========================
+# Data & Outputs
+# ========================
+training_data/
+recorded_*/
+fall_events/
+output/
+logs/
+*.csv
+*.json
+
+# ========================
+# Cache
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+
+# ========================
+# IDE & OS
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ========================
+# Misc
+# ========================
+*.log
+*.tmp
+*.bak
